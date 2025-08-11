@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.css" />
+
+    <style>
+        @import url(css/clash-display.css);
+:root {
+--font-base: "ClashDisplay", sans-serif;
+--c-body: #727272;
+--c-brand: #4e57d4;
+        --c-brand-light: #6970dd;
+         --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+--transition: all 0.5s ease;
+}
+
+/* RESET AND HELPERS */
+      body {
+        font-family: var(--font-base);
+        line-height: 1.7;
+      }
+a {
+        text-decoration: none;
+        color: white;
+        transition: var(--transition);
+      }
+      a:hover {
+        color: var(--c-brand-light);
+      }
+img {
+        max-width: 100%;
+        height: auto;
+      }
+      .section-padding {
+        padding-top: 140px;
+        padding-bottom: 140px;
+      }
+.btn {
+    border-radius: 24px;
+    padding: 8px 40px;
+}
+.btn:hover {
+    background-color: #6970dd;
+}
+.line {
+        width: 120px;
+        height: 1px;
+        background-color: black;
+        margin: 16px auto 24px auto;
+      }
+      /* NAVIGATION */
+      nav {
+        background-color: #0A2640;
+        color: white;
+      }
+      .navbar {
+        box-shadow: var(--box-shadow);
+        
+      }
+      .hero {
+        background-color: #0A2640;
+        color: white;
+      }
+      /* SERVICES */
+      .bi-check-circle-fill {
+        width: 36px;
+        height: 36px;
+        color: #0A2640;
+      }
+      .ser {
+        color: black;
+      }
+      .ser:hover {
+        background-color: #0A2640;
+        color: white;
+      }
+      /* REVIEWS */
+      .reviews {
+        background-color: #0A2640;
+        color: white;
+      }
+      .bi-arrow-right-circle-fill {
+        font-size: 72px;
+      }
+      .bi-arrow-left-circle-fill {
+        font-size: 72px;
+        margin-right: 15px;
+      }
+      .rev {
+        background-color: white;
+        color: black;
+        border-radius: 12px;
+        height: 322px;
+        width: 350px;
+      }
+      .rev1 {
+        height: 394px;
+      }
+      .rev2 {
+        height: 358px;
+      }
+      /* MORE */
+      #more {
+        background-color: #0A2640;
+        color: white;
+      }
+.search {
+        height: 40px;
+        width: 30%;
+        border-radius: 60px;
+        outline: none;
+        margin-right: 20px;
+        font-family: sans-serif;
+        border: 2px solid rgb(252, 251, 251);
+        font-size: 15px;
+      }
+      .btn0 {
+        height: 45px;
+        width: 15%;
+        outline: none;
+        border: none;
+        background: rgb(26, 215, 248);
+        color: rgb(15, 15, 15);
+        border-radius: 60px;
+        font-size: 15px;
+      }
+      /* FOOTER */
+      footer {
+        color: black;
+        background-color: white;
+      }
+      li{
+        list-style-type: none;
+      }
+      /* OFFCANVAS */
+      .new{
+        color: white;
+        background-color: #0A2640;
+      }
+      .new:hover {
+        background-color: #6d95bb;
+        color: black;
+      }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg navbar-white fixed-top " >
+      <div class="container">
+        <a href="#" class="navbar-brand h1" style="font-weight: 900">
+         <img src="img/Logo Shape.png" alt="" class="img-fluid me-2" style="width: 25.91px; height: 33.16px; position: relative; bottom: 8px;"> <span style="font-size: 43.25px; display: inline-block; color: white;">Boldo</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        style="color: white;"
+          >
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item me-2">
+              <a href="#hero" class="nav-link active fw-semi-bold" style="color: white;">Product</a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="#services" class="nav-link fw-semi-bold" style="color: white;">Services</a>
+            </li>
+            <li class="nav-item me-2">
+              <a href="#about" class="nav-link fw-semi-bold" style="color: white;">About</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-brand ms-lg-3rem fw-semi-bold" style="color: rgb(24, 23, 23); background-color: white;">Log in</a>
+        </div>
+      </div>
+    </nav>
+<!-- HERO -->
+    <section id="hero" class="section-padding hero">
+      <div class="container mb-0">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6">
+            <h1>Save time by building  fast with Boldo Template </h1>
+            <p class="mt-3 mb-4" style="text-transform: capitalize;">
+              Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.
+            </p>
+                        <div>
+              <a href="#" class="btn  me-2 my-2" style="background-color: #69E6A6; color: black;" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftOffcanvas">Get Started</a>
+              <a href="#" class="btn btn-light ms-2 my-2" style="border: 1px solid white; background-color: #0A2640; color: white;">Our Portfolio</a>
+            </div>
+            <!-- OFFCANVAS -->
+             <div class="offcanvas offcanvas-start" tabindex="-1" id="leftOffcanvas" aria-labelledby="offcanvasLabel" style="background-color: #0A2640;">
+<div class="offcanvas-header">
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body" style="background-color: #0A2640;">
+  <ul class="list-group text-center" style="background-color: #0A2640; color: white;">
+    <li class="list-group-item new" style=" color: white; border: 1px solid #0A2640;"><a href="#">Home</a></li>
+    <li class="list-group-item new mt-3" style=" color: white; border: 1px solid #0A2640;"><a href="#">About Us</a></li>
+    <li class="list-group-item new mt-3" style=" color: white; border: 1px solid #0A2640;"><a href="#">Services</a></li>
+    <li class="list-group-item new mt-3" style=" color: white; border: 1px solid #0A2640;"><a href="#">Galery</a></li>
+    <li class="list-group-item new mt-3" style=" color: white; border: 1px solid #0A2640;"><a href="#">Contact Us</a></li>
+  </ul>
+</div>
+             </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/hero graphics.svg" alt="" />
+          </div>
+        </div> 
+                <div class="row">
+          <div class="col-12">
+            <img src="img/Logo Wall.png" alt="">
+          </div>
+      </div>
+    </section>
+<!-- SERVICES -->
+<section id="services" class="min-vh-100 d-flex align-items-center text-center">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12">
+            <h5 class="  mb-4">
+              Our Services
+            </h5>
+            <h3 class=" display-2 " style="font-size: 50px;">
+              Handshake infographic mass market crowdfunding iteration.
+            </h3>
+          </div>
+        </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="portfolio-item image-zoom">
+<div class="image-zoom-wrapper ms-0" style="justify-content: start; align-content: start;">
+  <img src="img/Rectangle 1270 (4).png" alt="">------
+</div>
+<div class="ms-0 text-start mt-4">
+<h4 class="fs-medium">Cool feature title</h4>
+<p>Learning curve network effects return on investment.</p>
+<div>
+    <a href="#services" class="nav-link fw-semi-bold" style="color: rgb(10, 10, 10);">Explore page <i class="bi bi-arrow-right"></i> </a>
+              <div class="line ms-0"></div>
+</div>
+</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item image-zoom">
+<div class="image-zoom-wrapper ms-0" style="justify-content: start; align-content: start;">
+  <img src="img/Rectangle 1270.png" alt="">------
+</div>
+<div class="ms-0 text-start mt-4">
+<h4 class="fs-medium">Cool feature title</h4>
+<p>Learning curve network effects return on investment.</p>
+<div>
+    <a href="#services" class="nav-link fw-semi-bold" style="color: rgb(10, 10, 10);">Explore page <i class="bi bi-arrow-right"></i> </a>
+              <div class="line ms-0"></div>
+</div>
+</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item image-zoom">
+<div class="image-zoom-wrapper ms-0" style="justify-content: start; align-content: start;">
+  <img src="img/Rectangle 1270 (1).png" alt="">------
+</div>
+<div class="ms-0 text-start mt-4">
+<h4 class="fs-medium">Cool feature title</h4>
+<p>Learning curve network effects return on investment.</p>
+<div>
+    <a href="#services" class="nav-link fw-semi-bold" style="color: rgb(10, 10, 10);">Explore page <i class="bi bi-arrow-right"></i> </a>
+              <div class="line ms-0"></div>
+</div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-between align-items-center mt-5">
+          <div class="col-lg-6">
+            <img src="img/Group 216.png" alt="" />
+          </div>
+          <div class="col-lg-6">
+            <h1 style="font-weight: normal;">We connect our customers with the best, and help them keep up-and stay open.</h1>
+            <div
+              class="flex-container d-flex pt-4 mb-3"
+              style="flex-direction: row"
+            >
+              <div class="iconbox me-4">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="d-flex" style="flex-direction: column">
+                <p>We connect our customers with the best.</p>
+              </div>
+            </div>
+            <div class="flex-container d-flex" style="flex-direction: row">
+              <div class="iconbox me-4">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="d-flex" style="flex-direction: column">
+                <p>Advisor success customer launch party.</p>
+              </div>
+            </div>
+            <div class="flex-container d-flex" style="flex-direction: row">
+              <div class="iconbox me-4">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div class="d-flex" style="flex-direction: column">
+                <p>Business-to-consumer long tail.</p>
+              </div>
+            </div>
+            <div style="align-self: start; justify-self: start;">
+              <a href="#" class="btn btn-light ms-0 my-2" style="border: 1px solid white; background-color: #0A2640; color: white;">Start Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6">
+            <h1 style="font-weight: normal;">We connect our customers with the best, and help them keep up-and stay open.</h1>
+            <div
+              class="flex-container d-flex pt-4 mb-3 ser card"
+              style="flex-direction: row"
+            >
+              <div class="iconbox me-4">
+                <i class="bi bi-feather"></i>
+              </div>
+              <div class="d-flex" style="flex-direction: column">
+                <p>We connect our customers with the best.</p>
+              </div>
+            </div>
+            <div class="flex-container d-flex ser card" style="flex-direction: row">
+              <div class="iconbox me-4">
+                <i class="bi bi-eye"></i>
+              </div>
+              <div class="d-flex" style="flex-direction: column">
+                <p>Advisor success customer launch party.</p>
+              </div>
+            </div>
+            <div class="flex-container d-flex ser card" style="flex-direction: row">
+              <div class="iconbox me-4">
+                <i class="bi bi-sun"></i>
+              </div>
+              <div class="d-flex" style="flex-direction: column">
+                <p>Business-to-consumer long tail.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/Group 281 (1).png" alt="" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- REVIEWS -->
+<section class="section-padding reviews">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6">
+            <h2 style="font-weight: normal;">An enterprise template to ramp up your company website</h2>
+          </div>
+          <div class="col-lg-6" style="width: 200px;
+        height: px;">
+            <i class="bi bi-arrow-left-circle-fill "></i>
+            <i class="bi bi-arrow-right-circle-fill "></i>
+          </div>
+        </div>
+        <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-12 rev px-4 py-4 me-2">
+            <div class="portfolio-item image-zoom">
+<div class="image-zoom-wrapper ms-0" style="justify-content: start; align-content: start;">
+  <h4 style="font-weight: normal;">“Buyer buzz partner network disruptive non-disclosure agreement business”</h4>
+</div>
+<div class="review-person mt-4 d-flex align-items-center">
+    <img src="img/business.jpg" alt="" class="img-fluid brown rounded-circle" style="width: 58px; height: 58px;">
+    <div class="ms-3">
+      <h5>Albus Dumbledore</h5>
+      <small>Manager @ Howarts</small>
+    </div>
+<div>
+</div>
+</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 rev rev1 px-4 py-4 me-2">
+            <div class="portfolio-item image-zoom">
+<div class="image-zoom-wrapper ms-0" style="justify-content: start; align-content: start;">
+  <h4 style="font-weight: normal;">“Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.”</h4>
+</div>
+<div class="review-person mt-4 d-flex align-items-center">
+    <img src="img/business.jpg" alt="" class="img-fluid brown rounded-circle" style="width: 58px; height: 58px;">
+    <div class="ms-3">
+      <h5>Severus Snape</h5>
+      <small>Manager @ Slytherin</small>
+    </div>
+<div>
+</div>
+</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 rev rev2 px-4 py-4">
+            <div class="portfolio-item image-zoom">
+<div class="image-zoom-wrapper ms-0" style="justify-content: start; align-content: start;">
+  <h4 style="font-weight: normal;">“Release facebook responsive web design business model canvas seed money monetization.”</h4>
+</div>
+<div class="review-person mt-4 d-flex align-items-center">
+    <img src="img/business.jpg" alt="" class="img-fluid brown rounded-circle" style="width: 58px; height: 58px;">
+    <div class="ms-3">
+      <h5>Harry Potter</h5>
+      <small>Team Leader @ Gryffindor</small>
+    </div>
+<div>
+</div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+<!-- ABOUT -->
+<section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <img src="img/Image.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6">
+            <h1 style="font-weight: normal;">We connect our customers with the best, and help them keep up-and stay open.</h1>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="flex-container d-flex pt-4 mb-3"
+              style="flex-direction: row"
+            >
+              <div class="d-flex me-5" style="flex-direction: column">
+                <p>We connect our customers with the best?</p>
+              </div>
+              <div class="iconbox me-4">
+                <i class="bi bi-chevron-down px-1" style="font-size: 20px; border-radius: 50%; background-color: #0A2640; color: white;"></i>
+              </div>
+            </div>
+            <div class="line ms-0 col-lg-12" style="width: 390px;"></div>
+            <div
+              class="flex-container d-flex pt-4 mb-3"
+              style="flex-direction: row;"
+            >
+              <div class="d-flex " style="flex-direction: column; margin-right: 35px;">
+                <p>Android research & development rockstar? </p>
+              </div>
+              <div class="iconbox me-4">
+                <i class="bi bi-chevron-down px-1" style="font-size: 20px; border-radius: 50%; background-color: #0A2640; color: white;"></i>
+              </div>
+            </div>
+            <div class="line ms-0 col-lg-12" style="width: 390px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- BLOG -->
+<section id="blog" class="min-vh-100 d-flex align-items-center text-center">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12">
+            <h5 class="  mb-4" style="font-weight: normal;">
+              Our Blog
+            </h5>
+            <h3 class=" display-2 " style="font-size: 50px; font-weight: 500;">
+              Value proposition accelerator product management venture
+            </h3>
+          </div>
+        </div>
+      <div class="container mt-5">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="portfolio-item image-zoom">
+<div class="image-zoom-wrapper ms-0" style="justify-content: start; align-content: start;">
+  <img src="img/Rectangle 1270 (4).png" alt="">------
+</div>
+<div class="ms-0 text-start mt-4">
+<h4 class="fs-medium">Category <span style="font-weight: normal; color: grey;">November 22, 2021</span></h4>
+<p>Pitch termsheet backing validation focus release.</p>
+<div class="review-person mt-4 d-flex align-items-center">
+    <img src="img/business.jpg" alt="" class="img-fluid brown rounded-circle" style="width: 58px; height: 58px;">
+    <div class="ms-3">
+      <h5>Chandler Bing</h5>
+    </div>
+<div>
+</div>
+</div>
+</div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="portfolio-item image-zoom">
+<div class="image-zoom-wrapper ms-0" style="justify-content: start; align-content: start;">
+  <img src="img/womanlap.png" alt="">------
+</div>
+<div class="ms-0 text-start mt-4">
+<h4 class="fs-medium">Category <span style="font-weight: normal; color: grey;">November 22, 2021</span></h4>
+<p>Pitch termsheet backing validation focus release.</p>
+<div class="review-person mt-4 d-flex align-items-center">
+    <img src="img/business.jpg" alt="" class="img-fluid brown rounded-circle" style="width: 58px; height: 58px;">
+    <div class="ms-3">
+      <h5>Rachel Green</h5>
+    </div>
+<div>
+</div>
+</div>
+</div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="portfolio-item image-zoom">
+<div class="image-zoom-wrapper ms-0" style="justify-content: start; align-content: start;">
+  <img src="img/Rectangle 1270 (6).png" alt="">------
+</div>
+<div class="ms-0 text-start mt-4">
+<h4 class="fs-medium">Category <span style="font-weight: normal; color: grey;">November 22, 2021</span></h4>
+<p>Pitch termsheet backing validation focus release.</p>
+<div class="review-person mt-4 d-flex align-items-center">
+    <img src="img/business.jpg" alt="" class="img-fluid brown rounded-circle" style="width: 58px; height: 58px;">
+    <div class="ms-3">
+      <h5>Monica Geller</h5>
+    </div>
+<div>
+</div>
+</div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+</section>
+                <a href="#" class="btn  me-2 my-5 d-block align-items-center text-center ms-auto me-auto" style="width: 200px; font-weight: bold; background-color: white; color: darkblue; border: 1px solid darkblue;">Load More</a>
+    <!-- MORE -->
+                  <section id="more" class="min-vh-100 d-flex align-items-center text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5 class=" display-1 text-white" style="font-weight: normal;">
+              An enterprise template to ramp up your company website
+            </h5>
+            <form action="#" class="d-flex mt-2" style="justify-content: center;">
+                <input type="email" class="px-2 search" placeholder="Your email address" aria-label="Search">
+                <button class="btn0" type="submit">Start now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- FOOTER -->
+     <footer class="">
+<div class="footer-top">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-3 col-sm-6">
+        <a href="#" class="navbar-brand h1" style="font-weight: 900">
+         <img src="img/logo small.png" alt="" class="img-fluid me-2" style="width: 25.0px; height: 32px; position: relative; bottom: 8px;"> <span style="font-size: 43.25px; display: inline-block; color: #0A2640;">Boldo</span>
+        </a>
+        <p class="mt-3">Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.</p>
+      <div class="social-icons mt-5">
+        All rights reserved.
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6" style="color: #0A2640;">
+        <h5 class=" mb-0 fw-bold mt-3">Landings</h5>
+        <ul>
+          <li class="mt-4"><a href="#" style="color: black;">Home</a></li>
+          <li class="mt-3"><a href="#" style="color: black;">Products</a></li>
+          <li class="mt-3"><a href="#" style="color: black;">Services</a></li>
+        </ul>
+    </div> 
+    <div class="col-lg-3 col-sm-6 "style="color: #0A2640;" >
+        <h5 class=" mb-0 fw-bold mt-3">Company</h5>
+        <ul>
+          <li class="mt-4"><a href="#" style="color: black;">Home</a></li>
+          <li class="mt-3"><a href="#" style="color: black;">Career<button class="btn0 ms-2" type="submit" style="width: 40%;">Hiring</button> </a></li>
+          <li class="mt-3"><a href="#" style="color: black;">Services</a></li>
+        </ul>
+    </div>
+ <div class="col-lg-3 col-sm-6" style="color: #0A2640;">
+        <h5 class=" mb-0 fw-bold mt-3">Resources</h5>
+        <ul>
+          <li class="mt-4">Blog</li>
+          <li class="mt-3">Products</li>
+          <li class="mt-3">Services</li>
+        </ul>
+    </div>
+  </div>
+</div>
+</div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row g-4 justify-content-between">
+    </div>
+  </div>
+</div>
+     </footer>
+
+
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
